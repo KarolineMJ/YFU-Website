@@ -431,7 +431,7 @@ button:active {
 /* video example*/
 
 .topVideo {
-    width: 202vw;
+    width: 95vh;
 }
 
 .videoTop {
@@ -479,8 +479,9 @@ web version
 
 @media screen and (min-width: 530px) {
     #logoWebNav {
-        width: 80px;
+        width: 60px;
         margin-top: 6px;
+
 
     }
     .container {
@@ -497,9 +498,12 @@ web version
     .webNav ul {
         list-style: none;
         text-align: center;
+
+
     }
     .webNav li {
         display: inline;
+
     }
     .webNav li a {
         color: #949698;
