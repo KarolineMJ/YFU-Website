@@ -413,6 +413,7 @@ button:active {
     text-align: center;
     padding: 2em;
 
+
 }
 
 .colorSection {
@@ -423,7 +424,22 @@ button:active {
     padding: 2em;
 }
 
+
+
 /*    sections content   */
+
+/* video example*/
+
+.topVideo {
+    width: 202vw;
+}
+
+.videoTop {
+    height: 100vh;
+}
+
+
+/* about */
 
 .aboutContent img {
     width: 45%;
@@ -455,6 +471,7 @@ web version
     #logoWebNav {
         width: 80px;
         margin-top: 6px;
+
     }
     .container {
         z-index: 400;
