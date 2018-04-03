@@ -1,3 +1,5 @@
+/* color for orange:½ #e4ad53 */
+
 /*-----------------------------------------------------------------------------
 mobile version
 ----------------------------------------------------------------------------*/
@@ -374,6 +376,15 @@ header nav ul li a{
   background: #e5e5e5;
   -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
+}
+
+/* color sections */
+
+.whiteSection{
+
+}
+.colorSection{
+    background-color: #e4ad53;
 }
 
 
