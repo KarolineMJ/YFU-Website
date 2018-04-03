@@ -451,6 +451,16 @@ button:active {
 
 }
 
+/* travel */
+
+.travelContent h2 {
+    font-size: 1.3em;
+    color: white;
+    padding: 0.8em;
+}
+
+
+
 
 /*      footer        */
 
