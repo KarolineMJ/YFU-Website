@@ -410,13 +410,38 @@ button:active {
 
 .whiteSection {
     height: 100vh;
+    text-align: center;
+    padding: 2em;
+
 }
 
 .colorSection {
     background-color: #e4ad53;
+    color: white;
     height: 100vh;
+    text-align: center;
+    padding: 2em;
 }
 
+/*    sections content   */
+
+.aboutContent img {
+    width: 45%;
+    padding: 1.5em;
+}
+
+.aboutContent p {
+    padding: 1.2em;
+
+}
+
+
+/*      footer        */
+
+footer {
+    background-color: #E1E5E2;
+    padding: 2em;
+}
 
 /*-----------------------------------------------------------------------------
 tablet version
@@ -427,11 +452,9 @@ web version
 ----------------------------------------------------------------------------*/
 
 @media screen and (min-width: 530px) {
-    #logo {
-        width: 175px;
-        float: left;
+    #logoWebNav {
+        width: 80px;
         margin-top: 6px;
-
     }
     .container {
         z-index: 400;
@@ -443,11 +466,10 @@ web version
     .webNav {
         display: block;
 
-
     }
     .webNav ul {
         list-style: none;
-        text-align: right;
+        text-align: center;
     }
     .webNav li {
         display: inline;
