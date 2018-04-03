@@ -506,8 +506,6 @@ web version
     #logoWebNav {
         width: 60px;
         margin-top: 6px;
-
-
     }
     .container {
         z-index: 400;
@@ -547,6 +545,11 @@ web version
         display: block;
 
     }
-
-
+    /* video */
+    .topVideo {
+        display: none;
+    }
+    .videoTop {
+        color: #E1E5E2;
+    }
 }
