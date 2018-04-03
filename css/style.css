@@ -436,6 +436,23 @@ button:active {
 
 .videoTop {
     height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.world {
+    font-size: 2em;
+    color: rgba(224, 162, 61, 0.8);
+}
+
+.worldHome {
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* this causes burger menu and logo to go underneath video. fix this */
 }
 
 
@@ -458,6 +475,14 @@ button:active {
     color: white;
     padding: 0.8em;
 }
+
+/* volunteer */
+
+.volunteerContent p {
+    padding: 1.2em;
+
+}
+
 
 
 
