@@ -63,7 +63,7 @@ button:active {
 }
 
 @media screen and (max-width: 530px){
-#logo{
+#logoMobileNav{
 	width: 50%;
 	float: left;
   margin-top: 6px;
@@ -152,7 +152,7 @@ header nav ul li a{
 .container .menu a:visited,
 .container .menu a:hover,
 .container .menu a:active {
-  color: #8a9272;
+  color: #e4ad53;
   text-decoration: none;
 }
 
@@ -160,7 +160,7 @@ header nav ul li a{
   position: relative;
   width:auto;
   float: right;
-  left: 0;
+  left: 210px;
   z-index: 600;
 }
 
@@ -168,7 +168,6 @@ header nav ul li a{
 .outer-menu .checkbox-toggle {
   position: absolute;
   top: 0;
-  left: -4px;
   z-index: 700;
   cursor: pointer;
   width: 60px;
@@ -241,7 +240,7 @@ header nav ul li a{
           flex: none;
   width: 100%;
   height: 2px;
-  background: #8a9272;
+  background: #e4ad53;
     color:#949698;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -264,7 +263,7 @@ header nav ul li a{
   left: 0;
   width: 100%;
   height: 2px;
-  background: #8a9272;
+  background: #e4ad53;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -297,7 +296,7 @@ header nav ul li a{
   width: 300vw;
   height: 300vw;
   color: #FEFEFE;
-  background: rgba(229, 229, 229, 0.9);
+  background: #FFFFFF;
   border-radius: 50%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -381,10 +380,11 @@ header nav ul li a{
 /* color sections */
 
 .whiteSection{
-
+    color: #e4ad53;
 }
 .colorSection{
     background-color: #e4ad53;
+    color: white;
 }
 
 
@@ -401,7 +401,7 @@ web version
 ----------------------------------------------------------------------------*/
 
 @media screen and (min-width: 530px) {
-#logo{
+#logoMobileNav{
   width: 175px;
   float: left;
   margin-top: 6px;
