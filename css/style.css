@@ -1,4 +1,6 @@
-/* color for orange:½ #e4ad53 */
+/* color for orange: #e4ad53
+    color for dots: #ffb033;
+*/
 
 body {
     margin-top: 60px;
@@ -1004,16 +1006,8 @@ Patterns - reusable parts of our design
     margin-top: -12px;
 }
 
-.cd-timeline__img.cd-timeline__img--picture {
-    background: #75ce66;
-}
-
-.cd-timeline__img.cd-timeline__img--movie {
-    background: #c03b44;
-}
-
-.cd-timeline__img.cd-timeline__img--location {
-    background: #f0ca45;
+.timelineCircle{
+    background:#ffb033;
 }
 
 
