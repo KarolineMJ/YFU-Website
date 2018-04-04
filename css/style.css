@@ -10,550 +10,570 @@ body {
 mobile version
 ----------------------------------------------------------------------------*/
 
-    #logoMobileNav {
-        width: 50%;
-        float: left;
-        margin-top: 6px;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    a {
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    h2 {
-        color: #78933F;
-        font-size: 36px;
-    }
-
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .webNav {
-        display: none;
-    }
-
-    button {
-        display: inline-block;
-        padding: 10px 25px;
-        font-size: 24px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #fff;
-        background-color: #78933F;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 2px #999;
-        position: relative;
-        width: 160px;
-    }
-
-    button:hover {
-        background-color: #5B6F30
-    }
-
-    button:active {
-        background-color: #5B6F30;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-    }
-
-    .container {
-        position: fixed;
-        top: 0;
-    }
-
-    #logo {
-            width: 50%;
-            float: left;
-            margin-top: 6px;
-        }
-
-        .top {
-            display: none;
-        }
-
-        #menu-big {
-            display: none;
-        }
-
-        .menu {
-            width: 50%;
-            float: left;
-        }
-
-        .burger-nav {
-            display: block;
-            color: #949698;
-            font-size: 2.2em;
-            background-color: white;
-            cursor: pointer;
-            float: right;
-            text-align: right;
-            width: auto;
-            padding-right: 14px;
-        }
-
-        header .wrapper {
-            width: 100%;
-            padding: 0;
-
-        }
-
-        .nav-list {
-            overflow: hidden;
-            height: 0;
-            margin: 0;
-            width: 100%;
-            list-style: none;
-            padding: 0;
-
-        }
-
-        .nav-list.open {
-            height: auto;
-        }
-
-        header nav ul li {
-            float: none;
-            text-align: left;
-            width: 100%;
-            margin-right: 0;
-            margin: 0;
-        }
-
-        header nav ul li a {
-            color: #949698;
-            border-bottom: 1px solid #949698;
-            display: block;
-            margin: 0;
-            text-decoration: none;
-        }
-
-    @import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300');
-    .flex-center {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    * {
-        box-sizing: border-box;
-        font-weight: 300;
-    }
-
-    .container .menu a,
-    .container .menu a:visited,
-    .container .menu a:hover,
-    .container .menu a:active {
-        color: #e4ad53;
-        text-decoration: none;
-    }
-
-    .outer-menu {
-        position: relative;
-        width: auto;
-        float: right;
-        left: 0;
-        z-index: 600;
-
-    }
-
-    .outer-menu {
-        position: relative;
-        width: auto;
-        float: right;
-        left: 210px;
-        z-index: 600;
-
-    }
-
-
-    .outer-menu .checkbox-toggle {
-        position: absolute;
-        top: 0;
-        z-index: 700;
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        opacity: 0;
-    }
-
-    .outer-menu .checkbox-toggle:checked + .hamburger > div {
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-    }
-
-    .outer-menu .checkbox-toggle:checked + .hamburger > div:before,
-    .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
-        top: 0;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-
-    .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
-        opacity: 0;
-    }
-
-    .outer-menu .checkbox-toggle:checked ~ .menu {
-        pointer-events: auto;
-        visibility: visible;
-    }
-
-    .outer-menu .checkbox-toggle:checked ~ .menu > div {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition-duration: .75s;
-        transition-duration: .75s;
-    }
-
-    .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
-        opacity: 1;
-        -webkit-transition: opacity 0.4s ease 0.4s;
-        transition: opacity 0.4s ease 0.4s;
-    }
-
-    .outer-menu .checkbox-toggle:hover + .hamburger {
-        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
-        -webkit-transform: rotate(225deg);
-        transform: rotate(225deg);
-    }
-
-    .outer-menu .hamburger {
-        position: relative;
-        top: 0;
-        left: 0;
-        z-index: 600;
-        width: 60px;
-        height: 60px;
-        padding: .5em 1em;
-        border-radius: 0 0.12em 0.12em 0;
-        cursor: pointer;
-        -webkit-transition: box-shadow 0.4s ease;
-        transition: box-shadow 0.4s ease;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    .outer-menu .hamburger > div {
-        position: relative;
-        -webkit-box-flex: 0;
-        -ms-flex: none;
-        flex: none;
-        width: 100%;
-        height: 2px;
-        background: #e4ad53;
-        color: #949698;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    .outer-menu .hamburger > div:before,
-    .outer-menu .hamburger > div:after {
-        content: '';
-        position: absolute;
-        z-index: 600;
-        top: -10px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #e4ad53;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-    }
-
-    .outer-menu .hamburger > div:after {
-        top: 10px;
-    }
-
-    .outer-menu .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        visibility: hidden;
-        overflow: hidden;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        outline: 1px solid transparent;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    .outer-menu .menu > div {
-        width: 300vw;
-        height: 300vw;
-        color: #FEFEFE;
-        background: #FFFFFF;
-        border-radius: 50%;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-        -webkit-box-flex: 0;
-        -ms-flex: none;
-        flex: none;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        overflow: hidden;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    .outer-menu .menu > div > div {
-        text-align: center;
-        max-width: 90vw;
-        max-height: 100vh;
-        opacity: 0;
-        -webkit-transition: opacity 0.4s ease;
-        transition: opacity 0.4s ease;
-        overflow-y: auto;
-        -webkit-box-flex: 0;
-        -ms-flex: none;
-        flex: none;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    .outer-menu .menu > div > div > ul {
-        list-style: none;
-        margin: 0;
-        display: block;
-        max-height: 100vh;
-    }
-
-    .outer-menu .menu > div > div > ul > li {
-        padding: 0;
-        margin: 1em;
-        font-size: 24px;
-        display: block;
-    }
-
-    .outer-menu .menu > div > div > ul > li > a {
-        position: relative;
-        display: inline;
-        cursor: pointer;
-        -webkit-transition: color 0.4s ease;
-        transition: color 0.4s ease;
-    }
-
-    .outer-menu .menu > div > div > ul > li > a:hover {
-        color: #e5e5e5;
-    }
-
-    .outer-menu .menu > div > div > ul > li > a:hover:after {
-        width: 100%;
-    }
-
-    .outer-menu .menu > div > div > ul > li > a:after {
-        content: '';
-        position: absolute;
-        z-index: 600;
-        bottom: -0.15em;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: #e5e5e5;
-        -webkit-transition: width 0.4s ease;
-        transition: width 0.4s ease;
-    }
-
-    /* color sections */
-    .whiteSection {
-        height: 100vh;
-        text-align: center;
-        padding: 2em;
-
-
-
-    }
-
-    .colorSection {
-        background-color: #e4ad53;
-        color: white;
-        height: 100vh;
-        text-align: center;
-        padding: 2em;
-    }
-
-
-    /*    sections content   */
-    /* video example*/
-    .topVideo {
-        width: 95vh;
-    }
-
-
-    .videoTop {
-        height: 100vh;
-        position: relative;
-        text-align: center;
-        color: white;
-    }
-
-    .world {
-        font-size: 2em;
-        color: rgba(224, 162, 61, 0.8);
-    }
-
-    .worldHome {
-        font-size: 2em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* this causes burger menu and logo to go underneath video. fix this */
-    }
-
-
-    /* about */
-    .aboutContent img {
-        width: 45%;
-        padding: 1.5em;
-    }
-
-    .aboutContent p {
-        padding: 1.2em;
-
-    }
-
-    /* travel */
-    .travelContent h2 {
-        font-size: 1.3em;
-        color: white;
-        padding: 0.8em;
-    }
-
-    /* volunteer */
-    .volunteerContent p {
-        padding: 1.2em;
-
-    }
-
-    /*      footer        */
-    footer {
-        background-color: #E1E5E2;
-        padding: 2em;
-    }
-
-    /*-----------------------------------------------------------------------------
+#logoMobileNav {
+    float: left;
+    margin-top: 6px;
+}
+
+.logo {
+    width: 70px;
+    grid-area: logo;
+    justify-self: center;
+    padding: 0.2em;
+}
+
+
+
+.container {
+    z-index: 400;
+    display: grid;
+    grid-template-areas: '. logo burger';
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    background-color: white;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: #78933F;
+    font-size: 36px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+}
+
+.webNav {
+    display: none;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #78933F;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px #999;
+    position: relative;
+    width: 160px;
+}
+
+button:hover {
+    background-color: #5B6F30
+}
+
+button:active {
+    background-color: #5B6F30;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.container {
+    position: fixed;
+    top: 0;
+}
+
+#logo {
+    width: 50%;
+    float: left;
+    margin-top: 6px;
+}
+
+.top {
+    display: none;
+}
+
+#menu-big {
+    display: none;
+}
+
+.menu {
+    width: 50%;
+    float: left;
+}
+
+.burger-nav {
+    display: block;
+    color: #949698;
+    font-size: 2.2em;
+    background-color: white;
+    cursor: pointer;
+    float: right;
+    text-align: right;
+    width: auto;
+    padding-right: 14px;
+}
+
+header .wrapper {
+    width: 100%;
+    padding: 0;
+
+}
+
+.nav-list {
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+
+}
+
+.nav-list.open {
+    height: auto;
+}
+
+header nav ul li {
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin-right: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #949698;
+    border-bottom: 1px solid #949698;
+    display: block;
+    margin: 0;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300');
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+.container .menu a,
+.container .menu a:visited,
+.container .menu a:hover,
+.container .menu a:active {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.outer-menu {
+    position: relative;
+    width: auto;
+    left: 0;
+    z-index: 600;
+    grid-area: burger;
+    justify-self: right;
+    align-self: center;
+}
+
+
+
+.outer-menu .checkbox-toggle {
+    position: absolute;
+    top: 0;
+    z-index: 700;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+}
+
+.outer-menu .checkbox-toggle:checked + .hamburger > div {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.outer-menu .checkbox-toggle:checked + .hamburger > div:before,
+.outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+    opacity: 0;
+}
+
+.outer-menu .checkbox-toggle:checked ~ .menu {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.outer-menu .checkbox-toggle:checked ~ .menu > div {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-duration: .75s;
+    transition-duration: .75s;
+}
+
+.outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+    opacity: 1;
+    -webkit-transition: opacity 0.4s ease 0.4s;
+    transition: opacity 0.4s ease 0.4s;
+}
+
+.outer-menu .checkbox-toggle:hover + .hamburger {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.outer-menu .hamburger {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    width: 60px;
+    height: 60px;
+    padding: .5em 1em;
+    border-radius: 0 0.12em 0.12em 0;
+    cursor: pointer;
+    -webkit-transition: box-shadow 0.4s ease;
+    transition: box-shadow 0.4s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.outer-menu .hamburger > div {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #e4ad53;
+    color: #949698;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.outer-menu .hamburger > div:before,
+.outer-menu .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 600;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #e4ad53;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.outer-menu .hamburger > div:after {
+    top: 10px;
+}
+
+.outer-menu .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.outer-menu .menu > div {
+    width: 300vw;
+    height: 300vw;
+    color: #FEFEFE;
+    background: #ffc973;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.outer-menu .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+    overflow-y: auto;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.outer-menu .menu > div > div > ul {
+    list-style: none;
+    margin: 0;
+    display: block;
+    max-height: 100vh;
+}
+
+.outer-menu .menu > div > div > ul > li {
+    padding: 0;
+    margin: 1em;
+    font-size: 24px;
+    display: block;
+}
+
+.outer-menu .menu > div > div > ul > li > a {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    -webkit-transition: color 0.4s ease;
+    transition: color 0.4s ease;
+}
+
+.outer-menu .menu > div > div > ul > li > a:hover {
+    color: #e5e5e5;
+}
+
+.outer-menu .menu > div > div > ul > li > a:hover:after {
+    width: 100%;
+}
+
+.outer-menu .menu > div > div > ul > li > a:after {
+    content: '';
+    position: absolute;
+    z-index: 600;
+    bottom: -0.15em;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #e5e5e5;
+    -webkit-transition: width 0.4s ease;
+    transition: width 0.4s ease;
+}
+
+/* color sections */
+
+.whiteSection {
+    height: 100vh;
+    text-align: center;
+    padding: 2em;
+
+
+
+}
+
+.colorSection {
+    background-color: #e4ad53;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    padding: 2em;
+}
+
+
+/*    sections content   */
+
+/* video example*/
+
+.topVideo {
+    width: 95vh;
+}
+
+
+.videoTop {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.world {
+    font-size: 2em;
+    color: rgba(224, 162, 61, 0.8);
+}
+
+.worldHome {
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* this causes burger menu and logo to go underneath video. fix this */
+}
+
+
+/* about */
+
+.aboutContent img {
+    width: 45%;
+    padding: 1.5em;
+}
+
+.aboutContent p {
+    padding: 1.2em;
+
+}
+
+/* travel */
+
+.travelContent h2 {
+    font-size: 1.3em;
+    color: white;
+    padding: 0.8em;
+}
+
+/* volunteer */
+
+.volunteerContent p {
+    padding: 1.2em;
+
+}
+
+/*      footer        */
+
+footer {
+    background-color: #E1E5E2;
+    padding: 2em;
+}
+
+/*-----------------------------------------------------------------------------
 tablet version
 ----------------------------------------------------------------------------*/
 
-
-
-
-    /*-----------------------------------------------------------------------------
+/*-----------------------------------------------------------------------------
 web version
 ----------------------------------------------------------------------------*/
-    @media screen and (min-width: 530px) {
-        #logoWebNav {
-            width: 60px;
-            margin-top: 6px;
-        }
-        .container {
-            z-index: 400;
-        }
 
-        .outer-menu {
-            display: none;
-        }
-        .webNav {
-            display: block;
-
-        }
-        .webNav ul {
-            list-style: none;
-            text-align: center;
-
-
-        }
-        .webNav li {
-            display: inline;
-
-        }
-        .webNav li a {
-            color: #949698;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        body {
-            margin-top: 0;
-        }
-
-
-        .top {
-            position: relative;
-            top: 0;
-            left: 0;
-            display: block;
-
-        }
-        /* video */
-        .topVideo {
-            display: none;
-        }
-        .videoTop {
-            color: #E1E5E2;
-        }
+@media screen and (min-width: 530px) {
+    .logo {
+        display: none;
     }
+
+    #logoWebNav {
+        width: 60px;
+        margin-top: 6px;
+    }
+    .container {
+        z-index: 400;
+    }
+
+    .outer-menu {
+        display: none;
+    }
+    .webNav {
+        display: block;
+
+    }
+    .webNav ul {
+        list-style: none;
+        text-align: center;
+
+
+    }
+    .webNav li {
+        display: inline;
+
+    }
+    .webNav li a {
+        color: #949698;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    body {
+        margin-top: 0;
+    }
+
+
+    .top {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+
+    }
+    /* video */
+    .topVideo {
+        display: none;
+    }
+    .videoTop {
+        color: #E1E5E2;
+    }
+}
