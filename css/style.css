@@ -10,7 +10,6 @@ body {
 mobile version
 ----------------------------------------------------------------------------*/
 
-@media screen and (max-width: 530px) {
     #logoMobileNav {
         width: 50%;
         float: left;
@@ -74,8 +73,7 @@ mobile version
         top: 0;
     }
 
-    @media screen and (max-width: 530px) {
-        #logo {
+    #logo {
             width: 50%;
             float: left;
             margin-top: 6px;
@@ -141,8 +139,6 @@ mobile version
             margin: 0;
             text-decoration: none;
         }
-
-    }
 
     @import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300');
     .flex-center {
@@ -494,10 +490,6 @@ mobile version
 
     }
 
-
-
-
-
     /*      footer        */
     footer {
         background-color: #E1E5E2;
@@ -507,6 +499,10 @@ mobile version
     /*-----------------------------------------------------------------------------
 tablet version
 ----------------------------------------------------------------------------*/
+
+
+
+
     /*-----------------------------------------------------------------------------
 web version
 ----------------------------------------------------------------------------*/
