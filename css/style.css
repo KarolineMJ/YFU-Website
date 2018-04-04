@@ -3,11 +3,11 @@
 /*-----------------------------------------------------------------------------
 mobile version
 ----------------------------------------------------------------------------*/
-
-body {
-    margin-top: 60px;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+@media screen and (max-width: 530px){
+#logoMobileNav{
+	width: 50%;
+	float: left;
+  margin-top: 6px;
 }
 
 * {
@@ -159,9 +159,8 @@ button:active {
 .container .menu a:visited,
 .container .menu a:hover,
 .container .menu a:active {
-    color: #8a9272;
-    text-decoration: none;
-}
+  color: #e4ad53;
+  text-decoration: none;}
 
 .outer-menu {
     position: relative;
@@ -169,18 +168,27 @@ button:active {
     float: right;
     left: 0;
     z-index: 600;
+
+}
+
+.outer-menu {
+  position: relative;
+  width:auto;
+  float: right;
+  left: 210px;
+  z-index: 600;
+
 }
 
 
 .outer-menu .checkbox-toggle {
-    position: absolute;
-    top: 0;
-    left: -4px;
-    z-index: 700;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 700;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
 }
 
 .outer-menu .checkbox-toggle:checked + .hamburger > div {
@@ -252,39 +260,39 @@ button:active {
 }
 
 .outer-menu .hamburger > div {
-    position: relative;
-    -webkit-box-flex: 0;
-    -ms-flex: none;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background: #8a9272;
-    color: #949698;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 100%;
+  height: 2px;
+  background: #e4ad53;
+    color:#949698;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .outer-menu .hamburger > div:before,
 .outer-menu .hamburger > div:after {
-    content: '';
-    position: absolute;
-    z-index: 600;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #8a9272;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+  content: '';
+  position: absolute;
+  z-index: 600;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #e4ad53;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .outer-menu .hamburger > div:after {
@@ -315,30 +323,30 @@ button:active {
 }
 
 .outer-menu .menu > div {
-    width: 300vw;
-    height: 300vw;
-    color: #FEFEFE;
-    background: rgba(229, 229, 229, 0.9);
-    border-radius: 50%;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    -webkit-box-flex: 0;
-    -ms-flex: none;
-    flex: none;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  width: 300vw;
+  height: 300vw;
+  color: #FEFEFE;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .outer-menu .menu > div > div {
@@ -414,6 +422,7 @@ button:active {
     padding: 2em;
 
 
+
 }
 
 .colorSection {
@@ -425,7 +434,6 @@ button:active {
 }
 
 
-
 /*    sections content   */
 
 /* video example*/
@@ -433,6 +441,13 @@ button:active {
 .topVideo {
     width: 95vh;
 }
+
+@media screen and (min-width: 530px) {
+#logoMobileNav{
+  width: 175px;
+  float: left;
+  margin-top: 6px;
+
 
 .videoTop {
     height: 100vh;
