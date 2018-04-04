@@ -660,7 +660,6 @@ Resource style
 /* color sections */
 
 .whiteSection {
-    height: 100vh;
     text-align: center;
     padding: 2em;
 
@@ -671,7 +670,6 @@ Resource style
 .colorSection {
     background-color: #e4ad53;
     color: white;
-    height: 100vh;
     text-align: center;
     padding: 2em;
 }
