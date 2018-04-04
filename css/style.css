@@ -770,18 +770,25 @@ web version
     }
 }
 
+
+
 /* --------------------------------
 
 Patterns - reusable parts of our design
 
 -------------------------------- */
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1080px) {
   .cd-is-hidden {
     visibility: hidden;
   }
+
+    .aboutFacts{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1080px) {
   .cd-timeline__content {
     margin-left: 0;
     padding: 1.6em;
@@ -831,7 +838,7 @@ Patterns - reusable parts of our design
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1080px) {
   /* inverse bounce effect on even content blocks */
   .cd-timeline__block:nth-child(even) .cd-timeline__content.cd-timeline__content--bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
@@ -909,7 +916,7 @@ Patterns - reusable parts of our design
 
 
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1080px) {
   .cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
@@ -940,7 +947,7 @@ Patterns - reusable parts of our design
   margin-bottom: 0;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1080px) {
   .cd-timeline__block {
     margin: 4em 0;
   }
@@ -980,7 +987,7 @@ Patterns - reusable parts of our design
   background: #f0ca45;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1080px) {
   .cd-timeline__img {
     width: 60px;
     height: 60px;
