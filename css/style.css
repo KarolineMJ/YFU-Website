@@ -180,7 +180,7 @@ header nav ul li a {
 .container .menu a:visited,
 .container .menu a:hover,
 .container .menu a:active {
-    color: #e4ad53;
+    color: #ffff;
     text-decoration: none;
 }
 
@@ -341,7 +341,7 @@ header nav ul li a {
     width: 300vw;
     height: 300vw;
     color: #FEFEFE;
-    background: #FFFFFF;
+    background: #ffc973;
     border-radius: 50%;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
