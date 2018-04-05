@@ -15,6 +15,10 @@ body {
 mobile version
 ----------------------------------------------------------------------------*/
 
+.volunteerContent img {
+    width: 75%;
+}
+
 #quote {
     grid-column: 1/-1;
     font-size: 1.3em;
