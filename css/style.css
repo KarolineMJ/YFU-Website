@@ -448,10 +448,6 @@ main {
     display: block;
 }
 
-body {
-    line-height: 1;
-}
-
 ol,
 ul {
     list-style: none;
@@ -665,7 +661,7 @@ Resource style
 .whiteSection {
     text-align: center;
     padding: 2em;
-
+    color: #7f8c97;
 
 
 }
@@ -884,7 +880,7 @@ Patterns - reusable parts of our design
     .financeContent,
     .volunteerContent,
     .instagramContent {
-        padding: 5vh 5vw;
+        padding: 5vh 6vw;
     }
 }
 
