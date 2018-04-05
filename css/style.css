@@ -3,6 +3,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Khula');
+@import url('https://fonts.googleapis.com/css?family=Suranna');
 
 body {
     margin-top: 60px;
@@ -13,6 +14,24 @@ body {
 /*-----------------------------------------------------------------------------
 mobile version
 ----------------------------------------------------------------------------*/
+
+.volunteerContent img {
+    width: 75%;
+}
+
+#quote {
+    grid-column: 1/-1;
+    font-size: 1.3em;
+    padding: 1em;
+    color: #e4ad53;
+}
+
+.instagramContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
 
 #logoMobileNav {
     float: left;
@@ -696,23 +715,15 @@ Resource style
 
 /* video example*/
 
-.videoTopWeb {
-    display: none;
+/* video */
+
+.worldSvg {
+    z-index: 200;
+    position: absolute;
 }
 
-.topVideo {
-    width: 100vh;
-}
 
-
-.videoTop {
-    height: 100vh;
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.world {
+/* .world {
     font-size: 2em;
     color: rgba(224, 162, 61, 0.8);
 }
@@ -723,8 +734,8 @@ Resource style
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* this causes burger menu and logo to go underneath video. fix this */
 }
+    /* this causes burger menu and logo to go underneath video. fix this */
 
 .videoWrapper {
     position: relative;
@@ -779,6 +790,9 @@ web version
 ----------------------------------------------------------------------------*/
 
 @media screen and (min-width: 530px) {
+
+
+
     .logo {
         display: none;
     }
@@ -878,6 +892,7 @@ web version
     .worldSvg {
         z-index: 200;
         position: absolute;
+
     }
 
 }
@@ -894,6 +909,7 @@ Patterns - reusable parts of our design
     .cd-is-hidden {
         visibility: hidden;
     }
+
 
     .aboutFacts {
         display: grid;
