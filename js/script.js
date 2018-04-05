@@ -90,3 +90,12 @@ window.addEventListener('scroll', function () {
         removeClassOnScroll();
     }
 });
+
+let aboutBtn = document.querySelector(".aboutWebNav");
+
+aboutBtn.addEventListener('click', function(happening){
+    console.log("scrolling");
+    //document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
+});
+
+
