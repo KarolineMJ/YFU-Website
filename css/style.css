@@ -73,7 +73,10 @@ q{
     margin: 0;
     padding: 0;
 }
-
+    #about{
+        position: relative;
+        z-index: 300;
+    }
 
 
 
@@ -835,10 +838,7 @@ web version
 
     }
 
-    #about{
-        position: relative;
-        z-index: 300;
-    }
+
     .webNav.scrolled {
         background: rgba(255, 255, 255, 0.9);
     }
@@ -915,11 +915,6 @@ web version
         color: #E1E5E2;
     }
 
-    .worldSvg {
-        z-index: 200;
-        position: absolute;
-
-    }
 
 }
 
