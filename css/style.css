@@ -626,7 +626,7 @@ Resource style
 
 .cd-timeline__content h2 {
     color: #303e49;
-    font-size: 100%;
+    font-size: 1.2em;
 }
 
 
@@ -643,13 +643,13 @@ Resource style
 .cd-timeline__read-more {
     float: right;
     padding: .8em 1em;
-    background: #acb7c0;
+    background: #ffb033;
     color: white;
     border-radius: 0.25em;
 }
 
 .cd-timeline__read-more:hover {
-    background-color: #bac4cb;
+    background-color: #f1a62e;
 }
 
 .cd-timeline__date {
@@ -681,6 +681,10 @@ Resource style
 /*    sections content   */
 
 /* video example*/
+
+.videoTopWeb {
+    display: none;
+}
 
 .topVideo {
     width: 100vh;
@@ -774,20 +778,20 @@ web version
         background: rgba(255, 255, 255, 0.9);
     }
 
-    .aboutWebNav{
+    .aboutWebNav {
         grid-area: about;
     }
-    .travelsWebNav{
+    .travelsWebNav {
         grid-area: travels;
     }
-    #logoWebNav{
+    #logoWebNav {
         grid-area: logoWeb;
     }
-    .financingWebNav{
+    .financingWebNav {
         grid-area: financing;
     }
 
-    .volunteerWebNav{
+    .volunteerWebNav {
         grid-area: volunteer;
     }
 
@@ -824,12 +828,21 @@ web version
 
     }
     /* video */
-    .topVideo {
+    .videoTopWeb {
+        display: block;
+    }
+    .videoTop {
         display: none;
     }
     .videoTop {
         color: #E1E5E2;
     }
+
+    .worldSvg {
+        z-index: 200;
+        position: absolute;
+    }
+
 }
 
 
