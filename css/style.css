@@ -818,6 +818,10 @@ web version
 
     }
 
+    #about{
+        position: relative;
+        z-index: 300;
+    }
     .webNav.scrolled {
         background: rgba(255, 255, 255, 0.9);
     }
@@ -881,6 +885,7 @@ web version
     /* video */
     .videoTopWeb {
         display: block;
+        position: relative;
     }
     .videoTop {
         display: none;
