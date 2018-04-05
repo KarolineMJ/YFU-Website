@@ -43,6 +43,7 @@ mobile version
 
 
 
+
 h2 {
     color: #78933F;
     font-size: 36px;
@@ -483,19 +484,6 @@ ul {
     list-style: none;
 }
 
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -857,6 +845,13 @@ web version
         padding: 14px 16px;
         text-decoration: none;
     }
+
+    #finance p{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        text-align: left
+    }
+
     body {
         margin-top: 0;
     }
