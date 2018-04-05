@@ -78,6 +78,26 @@ q{
         z-index: 300;
     }
 
+#ctn {
+    position: relative;
+height: 100px;}
+
+
+#ctn a {
+  position: absolute;
+  left: 0px;
+  top: -100px;
+}
+
+    #finance div{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+
+
+    }
 
 
 h2 {
@@ -141,18 +161,22 @@ button:active {
 
 
 /*  internal links */
-
-/*#about:before {
-    padding-top: 100px;
+/*
+#about:before {
     display: block;
     content: "";
+    margin: -100px 0 0;
+    height: 100px;
 }
 
 #travels:before {
-    padding-top: 100px;
     display: block;
     content: "";
+    margin-top: -100px;
+    height: 100px;
 }
+
+/*
 
 #finance:before {
     padding-top: 100px;
@@ -889,6 +913,10 @@ web version
         justify-content: center;
 
 
+    }
+
+    .coinStack{
+        width: 80%
     }
 
     body {
