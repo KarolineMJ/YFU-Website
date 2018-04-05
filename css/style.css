@@ -91,8 +91,7 @@ height: 100px;}
 
     #finance div{
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        text-align: left;
+        grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
 
