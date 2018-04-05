@@ -2,10 +2,12 @@
     color for dots: #ffb033;
 */
 
+@import url('https://fonts.googleapis.com/css?family=Khula');
+
 body {
     margin-top: 60px;
     padding: 0;
-    font-family: 'Antic', sans-serif;
+    font-family: 'Khula', sans-serif;
 }
 
 /*-----------------------------------------------------------------------------
@@ -156,7 +158,6 @@ header nav ul li a {
     text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Antic');
 .flex-center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -711,7 +712,7 @@ Resource style
 /* about */
 
 .aboutContent img {
-    width: 45%;
+    height: 150px;
     padding: 1.5em;
 }
 
@@ -846,7 +847,7 @@ Patterns - reusable parts of our design
 
     .aboutFacts {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
