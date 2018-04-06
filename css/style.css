@@ -26,14 +26,14 @@ mobile version
     color: #e4ad53;
 }
 
-q{
+q {
 
     font-style: italic;
     font-size: 1.3em;
     font-weight: 600;
 }
 
-.author{
+.author {
     text-align: right;
     font-size: 0.9em;
 }
@@ -49,6 +49,7 @@ q{
     float: left;
     margin-top: 6px;
 }
+
 .logo {
     width: 70px;
     grid-area: logo;
@@ -65,38 +66,41 @@ q{
     background-color: white;
 
 }
-.coinStack{
-    width:50%;
+
+.coinStack {
+    width: 50%;
 }
 
 * {
     margin: 0;
     padding: 0;
 }
-    #about{
-        position: relative;
-        z-index: 300;
-    }
+
+#about {
+    position: relative;
+    z-index: 300;
+}
 
 #ctn {
     position: relative;
-height: 100px;}
+    height: 100px;
+}
 
 
 #ctn a {
-  position: absolute;
-  left: 0px;
-  top: -100px;
+    position: absolute;
+    left: 0px;
+    top: -100px;
 }
 
-    #finance div{
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
+#finance div {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
 
 
-    }
+}
 
 
 h2 {
@@ -160,6 +164,7 @@ button:active {
 
 
 /*  internal links */
+
 /*
 #about:before {
     display: block;
@@ -820,7 +825,8 @@ footer {
     background-color: #7f8c97;
     padding: 2em;
 }
-aside{
+
+aside {
     color: white;
 }
 
@@ -834,7 +840,9 @@ web version
 
 @media screen and (min-width: 530px) {
 
-
+    .volunteerContent img {
+        width: 30%;
+    }
 
     .logo {
         display: none;
@@ -862,11 +870,11 @@ web version
     }
 
     .instagramContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
 
-}
+    }
 
     .webNav.scrolled {
         background: rgba(255, 255, 255, 0.9);
@@ -910,7 +918,7 @@ web version
         text-decoration: none;
     }
 
-    #finance div{
+    #finance div {
         display: grid;
         grid-template-columns: 2fr 1fr;
         text-align: left;
@@ -920,7 +928,7 @@ web version
 
     }
 
-    .coinStack{
+    .coinStack {
         width: 80%
     }
 
